@@ -36,23 +36,33 @@
             <a href="#contact" class="block py-2 px-6 text-white hover:bg-gray-800">Contact</a>
         </div>
     </header>
-
-    <main class="container mx-auto px-6">
-        <section id="hero" class="min-h-screen flex items-center">
-            <div class="w-full text-center md:text-left">
-                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight">
-                    Technical Artist &<br><span class="gradient-text">Game Developer</span>
-                </h1>
-                <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto md:mx-0">
-                    Developer, designer, and animator fostering success through innovation, adaptability, and effective communication. Bridging the gap between art and technology.
-                </p>
-                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <a href="#portfolio" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300">View My Work</a>
-                    <a href="#contact" class="bg-gray-700 text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-600 transition duration-300">Get In Touch</a>
+    
+        <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+            <div class="hero-background-video">
+                <video autoplay loop muted playsinline>
+                    <source src="https://i.imgur.com/bC3Pif9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="hero-content-wrapper container mx-auto px-6 relative z-10">
+                <div class="text-center md:text-left hero-text">
+                <div class="hero-text2">
+                    <h1 class="text-5xl md:text-7xl font-black text-white leading-tight" style="margin-left: 100px;">
+                        Technical Artist &<br><span class="gradient-text">Game Developer</span>
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-white-400 max-w-2xl mx-auto md:mx-0">
+                        Developer, designer, and animator fostering success through innovation, adaptability, and effective communication. Bridging the gap between art and technology.
+                    </p>
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#portfolio" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300">View My Work</a>
+                        <a href="#contact" class="bg-gray-700 text-white font-semibold py-3 px-8 rounded-lg hover:bg-gray-600 transition duration-300">Get In Touch</a>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
 
+        <!--
         <section id="about" class="py-20 fade-in-section">
             <h2 class="text-4xl font-bold text-white text-center mb-2">About Me</h2>
             <div class="w-20 h-1 bg-indigo-500 mx-auto mb-12"></div>
@@ -76,7 +86,9 @@
                 </div>
             </div>
         </section>
-
+        -->
+        
+    <main class="container mx-auto px-6">
         <section id="portfolio" class="py-20 fade-in-section">
             <h2 class="text-4xl font-bold text-white text-center mb-2">Portfolio</h2>
             <p class="text-center text-gray-400 mb-12">A selection of my game projects and art assets.</p>
@@ -150,38 +162,55 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="portfolio-item group cursor-pointer" 
-                     data-title="Sci-Fi Weapon" 
+                     data-title="Detailed Rustry Wrench" 
                      data-type="3D Prop" 
-                     data-tools="Autodesk Maya, Substance Painter" 
-                     data-desc="A game-ready sci-fi assault rifle model. This asset was modeled for low-poly efficiency while maintaining a high level of detail through normal map baking from a high-poly sculpt."
+                     data-tools="Autodesk Maya, Substance Painter, Marmoset Toolbag" 
+                     data-desc="A game ready wrench asset that's detailed enough to use as a player's primary weapon. Low polygon count model with highly detailed 4K textures, presented in Marmoset Viewer."
                      data-media='[
-                        {"type": "image", "src": "https://placehold.co/1280x720/3b82f6/ffffff?text=Beauty+Shot"},
-                        {"type": "image", "src": "https://placehold.co/1280x720/3b82f6/ffffff?text=Wireframe"},
-                        {"type": "image", "src": "https://placehold.co/1280x720/3b82f6/ffffff?text=Texture+Set"}
+                        {"type": "image", "src": "https://cdna.artstation.com/p/assets/images/images/082/747/224/large/thejas-menon-untitled.jpg"},
+                        {"type": "image", "src": "https://cdna.artstation.com/p/assets/images/images/082/747/228/large/thejas-menon-untitled-001.jpg"},
+                        {"type": "image", "src": "https://cdna.artstation.com/p/assets/images/images/082/747/244/large/thejas-menon-untitled-003.jpg"}
                      ]'>
                     <div class="relative overflow-hidden rounded-lg">
-                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=3D+Render+2" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="https://cdna.artstation.com/p/assets/images/images/082/747/224/large/thejas-menon-untitled.jpg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 5" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="text-white text-2xl font-bold">View Project</h3>
+                            <h3 class="text-white text-2xl font-bold">Detailed Rustry Wrench</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-item group cursor-pointer" 
-                     data-title="Python Pipeline Tool" 
-                     data-type="Technical Art" 
-                     data-tools="Python, Autodesk Maya API" 
+                     data-title="Misc Animations and art" 
+                     data-type="3D and 2D Art" 
+                     data-tools="Maya, Premiere, After Effects, Photoshop" 
                      data-desc="Developed a custom tool for Maya using Python that automates the process of exporting game assets. The tool validates naming conventions, sets export paths, and batch exports selected objects as FBX files, significantly speeding up the art pipeline."
                      data-media='[
-                        {"type": "image", "src": "https://placehold.co/1280x720/0ea5e9/ffffff?text=Tool+UI"},
-                        {"type": "image", "src": "https://placehold.co/1280x720/0ea5e9/ffffff?text=Code+Snippet"}
+                        {"type": "video", "src": "https://i.imgur.com/kurgI81.mp4"},
+                        {"type": "video", "src": "https://i.imgur.com/bC3Pif9.mp4"},
+                        {"type": "video", "src": "https://i.imgur.com/MITCPZC.mp4"},
+                        {"type": "video", "src": "https://i.imgur.com/y0fsfI5.mp4"},
+                        {"type": "image", "src": "https://i.imgur.com/4mHPPRF.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/IoWzLLo.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/rhGEmBw.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/syZJB78.png"},
+                        {"type": "image", "src": "https://i.imgur.com/dKMyTVJ.png"},
+                        {"type": "image", "src": "https://i.imgur.com/ie5D7Pv.png"},
+                        {"type": "image", "src": "https://i.imgur.com/AD0g2Dc.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/K7HBnGz.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/5kAWfUZ.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/RRMNxaC.png"},
+                        {"type": "image", "src": "https://i.imgur.com/2lWETuA.png"},
+                        {"type": "image", "src": "https://i.imgur.com/lvm5CB3.png"},
+                        {"type": "image", "src": "https://i.imgur.com/06hF8xG.jpeg"},
+                        {"type": "image", "src": "https://i.imgur.com/AE1IlCD.png"},
+                        {"type": "image", "src": "https://i.imgur.com/RLYY12H.png"},
+                        {"type": "image", "src": "https://i.imgur.com/Uy1Y1Gf.jpeg"}
                      ]'>
                     <div class="relative overflow-hidden rounded-lg">
-                        <img src="https://placehold.co/600x400/0ea5e9/ffffff?text=Pipeline+Tool" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <img src="https://i.imgur.com/dKMyTVJ.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 6" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
                         <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="text-white text-2xl font-bold">View Project</h3>
+                            <h3 class="text-white text-2xl font-bold">Misc Animations and art</h3>
                         </div>
                     </div>
                 </div>

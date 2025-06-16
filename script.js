@@ -103,21 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentSlide + direction);
     }
     
-    // [FIXED] Updated the way slides are created for robustness
-    const openModal = (item) => {
-        // Get data from attributes
+    // [FIXED] Updated the way slides are created for robustnessconst 
+    openModal = (item) => {
         const title = item.getAttribute('data-title');
         const type = item.getAttribute('data-type');
         const tools = item.getAttribute('data-tools').split(',').map(t => t.trim());
         const desc = item.getAttribute('data-desc');
         const mediaData = JSON.parse(item.getAttribute('data-media') || '[]');
 
-        // Populate text content
         modalTitle.textContent = title;
         modalType.textContent = type;
         modalDesc.textContent = desc;
-        
-        // Populate tools as tags
+    
         modalToolsContainer.innerHTML = '';
         tools.forEach(tool => {
             const toolTag = document.createElement('span');
@@ -126,18 +123,15 @@ document.addEventListener('DOMContentLoaded', function() {
             modalToolsContainer.appendChild(toolTag);
         });
 
-        // Clear previous slides and dots
         slidesContainer.innerHTML = '';
         dotsContainer.innerHTML = '';
         slides = [];
         dots = [];
 
-        // Create and populate slideshow
         mediaData.forEach((media, index) => {
-            // Create slide element
             const slideEl = document.createElement('div');
             slideEl.className = 'slide flex items-center justify-center bg-black';
-            
+        
             if (media.type === 'video') {
                 const video = document.createElement('video');
                 video.src = media.src;
@@ -145,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 video.controls = true;
                 video.loop = true;
                 video.muted = true;
-                video.playsInline = true; // For iOS compatibility
+                video.playsInline = true;
                 slideEl.appendChild(video);
             } else { // 'image'
                 const img = document.createElement('img');
@@ -160,8 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             slidesContainer.appendChild(slideEl);
             slides.push(slideEl);
-            
-            // Create dot element
+        
             const dotEl = document.createElement('button');
             dotEl.className = 'dot w-3 h-3 rounded-full bg-gray-500 hover:bg-indigo-400';
             dotEl.addEventListener('click', () => showSlide(index));
@@ -169,13 +162,11 @@ document.addEventListener('DOMContentLoaded', function() {
             dots.push(dotEl);
         });
 
-        // Show/hide nav based on slide count
         const showNav = mediaData.length > 1;
         prevButton.style.display = showNav ? 'block' : 'none';
         nextButton.style.display = showNav ? 'block' : 'none';
         dotsContainer.style.display = showNav ? 'flex' : 'none';
 
-        // Show modal and first slide
         modal.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
         showSlide(0);
