@@ -34,7 +34,7 @@
             <a href="#contact" class="block px-6 py-2 text-white hover:bg-gray-800">Contact</a>
         </div>
     </header>
-
+    
         <section id="hero" class="relative flex min-h-screen items-center overflow-hidden">
             <div class="hero-background-video">
                 <video autoplay loop muted playsinline>
@@ -60,22 +60,45 @@
             </div>
         </section>
 
-        <main class="container mx-auto px-6">
+        <!--
+        <section id="about" class="fade-in-section py-20">
+            <h2 class="mb-2 text-center text-4xl font-bold text-white">About Me</h2>
+            <div class="mx-auto mb-12 h-1 w-20 bg-indigo-500"></div>
+            <div class="grid items-center gap-10 md:grid-cols-5">
+                <div class="md:col-span-2">
+                    <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Thejas+S.+Menon" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/1f2937/d1d5db?text=Image+Not+Found';"
+                         alt="Thejas Sreekumar Menon" 
+                         class="mx-auto w-full max-w-sm rounded-lg shadow-2xl md:max-w-none">
+                </div>
+                <div class="text-lg text-gray-300 md:col-span-3">
+                    <p class="mb-4">
+                        I am a passionate and versatile creative professional with a strong foundation in both the creative and technical pipelines of game development. My journey has taken me through full-stack web development, 3D animation, logo design, and video editing, giving me a unique, holistic perspective on digital creation.
+                    </p>
+                    <p class="mb-4">
+                        Currently pursuing a Post Graduate Program in Game Design, I thrive on solving complex problems that lie at the intersection of art and code. Whether it's crafting efficient art pipelines, developing custom tools and shaders, or bringing characters to life through animation and rigging, I'm dedicated to pushing boundaries and achieving a polished final product.
+                    </p>
+                    <p>
+                        My goal is to leverage my diverse skill set to contribute to innovative projects as a Technical Artist, helping creative visions become technical realities.
+                    </p>
+                </div>
+            </div>
+        </section>
+        -->
+        
+    <main class="container mx-auto px-6">
         <section id="portfolio" class="fade-in-section py-20">
             <h2 class="mb-2 text-center text-4xl font-bold text-white">Portfolio</h2>
             <p class="mb-12 text-center text-gray-400">A selection of my game projects and art assets.</p>
-
+            
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Physics Based Shooter"
-                     data-type="Third Person Shooter"
-                     data-tools="Unity, Maya, Substance Painter, Photoshop, Illustrator"
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Physics Based Shooter" 
+                     data-type="Third Person Shooter" 
+                     data-tools="Unity, Maya, Substance Painter, Photoshop, Illustrator" 
                      data-desc="Physics based shooter where the player and enemies are spherical robots using high energy blasts and explosions for combat. Movement is physics based, meaning that players rolls and drift across the arena as they're blasted by explosions and powerful shots, while destructable environment objects fly about. Contains minor stealth elements such as the player being able to sneak up behind enemies, and enemies being able to investigate player's last known position, etc."
                      data-media='[
                         {"type": "video", "src": "https://github.com/thejasm/thejasm.github.io/raw/refs/heads/main/videos/3DGameplay.mp4"}
-                        {"type": "image", "src": "https://github.com/thejasm/thejasm.github.io/blob/main/images/aidoc_(1)?raw=true"},
-                        {"type": "image", "src": "https://github.com/thejasm/thejasm.github.io/blob/main/images/aidoc_(2)?raw=true"},
-                        {"type": "image", "src": "https://github.com/thejasm/thejasm.github.io/blob/main/images/aidoc_(3)?raw=true"},
                      ]'>
                     <div class="relative overflow-hidden rounded-lg">
                         <img src="https://github.com/thejasm/thejasm.github.io/blob/main/images/3Dshot.png?raw=true" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 1" class="h-full w-full transform object-cover transition-transform duration-500 group-hover:scale-110">
@@ -85,10 +108,10 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Magic Survivors"
-                     data-type="2D Hypercasual Game"
-                     data-tools="Unity, Photoshop, Illustrator"
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Magic Survivors" 
+                     data-type="2D Hypercasual Game" 
+                     data-tools="Unity, Photoshop, Illustrator" 
                      data-desc="A hypercasual survival game where the player is a mage that has to survive waves enemies, and collect magical gems and treasure to upgrade their magical spells. Hyper casual pickup and play gameplay perfect for mobile."
                      data-media='[
                         {"type": "video", "src": "https://github.com/thejasm/thejasm.github.io/raw/refs/heads/main/videos/SurvGameplay.mp4"}
@@ -96,15 +119,15 @@
                     <div class="relative overflow-hidden rounded-lg">
                         <img src="https://github.com/thejasm/thejasm.github.io/blob/main/images/MenuBkg.jpg?raw=true" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/d1d5db?text=Image';" alt="Portfolio Item 2" class="h-full w-full transform object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                            <h3 class="text-2xl font-bold text-white">Magic Survivor</h3>
+                            <h3 class="text-2xl font-bold text-white">Magic Survivor</h3> 
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Ninja Tower"
-                     data-type="2D stealth Action Game"
-                     data-tools="Construct 3, Photoshop"
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Ninja Tower" 
+                     data-type="2D stealth Action Game" 
+                     data-tools="Construct 3, Photoshop" 
                      data-desc="A 2D stealth action game inspired by Katana Zero and Strider. Climb up the floors of a corrupt industrial tower to assassinate your target. Players can wall jump, throw shurikens, and turn invisible. Sneak past security and take out automated drone defenses."
                      data-media='[
                         {"type": "video", "src": "https://github.com/thejasm/thejasm.github.io/raw/refs/heads/main/videos/NinjaGameplay.mp4"},
@@ -121,11 +144,11 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Bullet Hell Demo"
-                     data-type="Bullet Hell Boss Battle"
-                     data-tools="Construct 3"
+                
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Bullet Hell Demo" 
+                     data-type="Bullet Hell Boss Battle" 
+                     data-tools="Construct 3" 
                      data-desc="A simple bullet hell style game demo against a single boss. Boss shoots out different patterns of bullets, missiles, and also has different damage states and animations."
                      data-media='[
                         {"type": "video", "src": "https://github.com/thejasm/thejasm.github.io/raw/refs/heads/main/videos/TPSGameplay.mp4"}
@@ -137,10 +160,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Detailed Rustry Wrench"
-                     data-type="3D Prop"
-                     data-tools="Autodesk Maya, Substance Painter, Marmoset Toolbag"
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Detailed Rustry Wrench" 
+                     data-type="3D Prop" 
+                     data-tools="Autodesk Maya, Substance Painter, Marmoset Toolbag" 
                      data-desc="A game ready wrench asset that's detailed enough to use as a player's primary weapon. Low polygon count model with highly detailed 4K textures, presented in Marmoset Viewer."
                      data-media='[
                         {"type": "image", "src": "https://cdna.artstation.com/p/assets/images/images/082/747/224/large/thejas-menon-untitled.jpg"},
@@ -155,10 +178,10 @@
                     </div>
                 </div>
 
-                <div class="portfolio-item group cursor-pointer"
-                     data-title="Misc Animations and art"
-                     data-type="3D and 2D Art"
-                     data-tools="Maya, Premiere, After Effects, Photoshop"
+                <div class="portfolio-item group cursor-pointer" 
+                     data-title="Misc Animations and art" 
+                     data-type="3D and 2D Art" 
+                     data-tools="Maya, Premiere, After Effects, Photoshop" 
                      data-desc="Developed a custom tool for Maya using Python that automates the process of exporting game assets. The tool validates naming conventions, sets export paths, and batch exports selected objects as FBX files, significantly speeding up the art pipeline."
                      data-media='[
                         {"type": "video", "src": "https://i.imgur.com/kurgI81.mp4"},
@@ -191,7 +214,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="skills" class="fade-in-section py-20">
             <h2 class="mb-12 text-center text-4xl font-bold text-white">My Arsenal</h2>
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -273,7 +296,7 @@
                 </div>
             </div>
         </section>
-
+        
 
         <section id="contact" class="fade-in-section py-20">
             <h2 class="mb-2 text-center text-4xl font-bold text-white">Get In Touch</h2>
@@ -304,15 +327,15 @@
         </div>
     </footer>
 
-    <div id="portfolio-modal" class="z-[100] fixed inset-0 flex hidden items-start justify-center overflow-y-auto bg-black bg-opacity-90 p-4 transition-opacity duration-300">
-        <div class="relative my-auto flex w-full max-w-screen-xl flex-col rounded-lg bg-gray-900 shadow-2xl md:h-[90vh] md:flex-row">
+    <div id="portfolio-modal" class="z-[100] fixed inset-0 flex hidden items-center justify-center bg-black bg-opacity-90 p-4 transition-opacity duration-300">
+        <div class="relative flex h-[90vh] w-full max-w-screen-xl flex-col rounded-lg bg-gray-900 shadow-2xl md:flex-row">
             <button id="modal-close" class="absolute right-4 top-4 z-50 rounded-full bg-gray-900/50 p-1 text-gray-400 hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
 
-            <div id="modal-details" class="w-full flex-shrink-0 p-8 md:w-[35%] md:overflow-y-auto lg:w-[30%]">
+            <div id="modal-details" class="w-full flex-shrink-0 overflow-y-auto p-8 md:w-[35%] lg:w-[30%]">
                 <h2 id="modal-title" class="mb-2 text-3xl font-bold text-white lg:text-4xl">Project Title</h2>
                 <p id="modal-type" class="mb-4 font-semibold text-indigo-400">Project Type</p>
                 <div class="mb-6 h-1 w-16 bg-indigo-500"></div>
@@ -322,7 +345,7 @@
                     </div>
             </div>
 
-            <div id="modal-slideshow" class="relative flex w-full items-center justify-center overflow-hidden bg-gray-900/50 aspect-video md:h-auto md:w-[65%] lg:w-[70%]">
+            <div id="modal-slideshow" class="relative flex w-full items-center justify-center overflow-hidden bg-gray-900/50 md:w-[65%] lg:w-[70%]">
                 <div id="slides-container" class="h-full w-full">
                      </div>
 
